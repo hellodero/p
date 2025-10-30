@@ -57,4 +57,14 @@ char* my_strdup(const char* s) {
 
 int yywrap(void) {
     return 1;
+
 }
+
+
+
+
+
+bison -d 4.y
+flex 4.l
+gcc 4.tab.c lex.yy.c -o syntx_anl
+./syntx_anl < test.txt
