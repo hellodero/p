@@ -72,7 +72,9 @@ int main(void) {
 }
 
 
-
+flex 2.l
+gcc lex.yy.c -o 2.exe
+./2.exe < input.c
 
 
 
@@ -82,4 +84,5 @@ int main() {
    int x = 10;
    float y = 20.5;
    return 0;
+
 }
